@@ -44,7 +44,6 @@ const Data = styled.View`
 `;
 
 const Title = styled.Text`
-	display: block;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;

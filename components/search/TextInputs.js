@@ -9,7 +9,7 @@ const TextInput = styled.TextInput`
 	border-radius: 15px;
 `;
 
-const Input = ({ placeholder, value, onChange, onSubmit }) => (
+export const Inputs = ({ placeholder, value, onChange, onSubmit }) => (
 	<TextInput
 		value={value}
 		onChangeText={onChange}
@@ -18,10 +18,9 @@ const Input = ({ placeholder, value, onChange, onSubmit }) => (
 		returnKeyType={"search"}
 	/>
 );
-Input.propTypes = {
+Inputs.propTypes = {
 	placeholder: PropTypes.string.isRequired,
 	value: PropTypes.string.isRequired,
 	onChange: PropTypes.func.isRequired,
 	onSubmit: PropTypes.func.isRequired,
 };
-export default Input;

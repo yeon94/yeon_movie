@@ -1,8 +1,8 @@
 import React from "react";
-import Input from "../../components/Search/Input";
 import ScrollContainer from "../../components/ScrollContainer";
 import HorizontalSlider from "../../components/HorizontalSlider";
 import Vertical from "../../components/Vertical";
+import { Inputs } from "../../components/search/TextInputs";
 
 export default ({ movies, shows, keyword, onChange, onSubmit }) => (
 	<ScrollContainer
@@ -11,7 +11,7 @@ export default ({ movies, shows, keyword, onChange, onSubmit }) => (
 		contentContainerStyle={{
 			paddingTop: 10,
 		}}>
-		<Input
+		<Inputs
 			placeholder={"Write a keyword"}
 			value={keyword}
 			onChange={onChange}

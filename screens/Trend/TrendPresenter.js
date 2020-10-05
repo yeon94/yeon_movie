@@ -33,6 +33,7 @@ const Title = styled.Text`
 `;
 
 const BtnArea = styled.View`
+	display: flex;
 	width: 120px;
 	margin-left: 20px;
 `;
